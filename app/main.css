@@ -1,0 +1,13 @@
+.app {
+  padding-left: 350px;
+}
+
+@media only screen and (max-width : 992px) {
+  .app {
+    padding-left: 0;
+  }
+}
+
+.content-section {
+  padding: 20px;
+}

@@ -1,0 +1,176 @@
+<table id="armortable">
+  <tbody>
+    <tr *ngFor="#armor of armors; #i = index">
+      <td>
+        <span class="level">
+          {{armor.data[57]}}
+        </span>
+      </td>
+      <td class="armorname">
+        {{armor.data[2]}} Armor
+        <span class="type0">
+          ({{ typeArray[armor.data[3]].type }})
+        </span>
+      </td>
+      <td class="armorpiccell" *ngFor="#armorcell of armor; #i = index">
+        <ul class="list">
+          <li class="item">
+            <img src="../images/{{armorcell.data[13]}}.png" class="armorpic"/>
+          </li>
+          <li class="info">
+            <table class="armorinfo">
+              <tbody>
+                <tr>
+                  <td class="piecename" colspan="2">
+                    {{armorcell.data[1]}}
+                    <hr/>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Defense:
+                    <span class="white">
+                      {{armorcell.data[6]}}
+                    </span>
+                    <hr/>
+                  </td>
+                </tr>
+                <tr class="attrib{{[armorcell.data[7],armorcell.data[8],armorcell.data[9],armorcell.data[10],armorcell.data[11]].join('')}}">
+                  <td colspan="2">
+                    [Attributes]
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="no{{armorcell.data[7]}}">
+                    Water Resistance:
+                    <span class="white">
+                      {{armorcell.data[7]}}
+                    </span>
+                  </td>
+                </tr>
+                <tr class="no{{armorcell.data[8]}}">
+                  <td colspan="2">
+                    Fire Resistance:
+                    <span class="white">
+                      {{armorcell.data[8]}}
+                    </span>
+                  </td>
+                </tr>
+                <tr class="no{{armorcell.data[9]}}">
+                  <td colspan="2">
+                    Thunder Resistance:
+                    <span class="white">
+                      {{armorcell.data[9]}}
+                    </span>
+                  </td>
+                </tr>
+                <tr class="no{{armorcell.data[10]}}">
+                  <td colspan="2">
+                    Dragon Resistance:
+                    <span class="white">
+                      {{armorcell.data[10]}}
+                    </span>
+                  </td>
+                </tr>
+                <tr class="no{{armorcell.data[11]}}">
+                  <td colspan="2">
+                    Ice Resistance:
+                    <span class="white">
+                      {{armorcell.data[11]}}
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <hr class="attribattrib{{[armorcell.data[7],armorcell.data[8],armorcell.data[9],armorcell.data[10],armorcell.data[11]].join('')}}"/>
+                    Mosaic Slots:
+                    <span class="white">
+                      {{armorcell.data[5]}}
+                    </span>
+                    <hr/>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    [Passive Skills]
+                  </td>
+                </tr>
+                <tr class="{{[armorcell.data[38],' skill',armorcell.data[39]].join('')}}">
+                  <td>
+                    {{armorcell.data[38]}}
+                  </td>
+                  <td class="skillamount">
+                    {{armorcell.data[39]}}
+                  </td>
+                </tr>
+                <tr class="{{[armorcell.data[40],' skill',armorcell.data[41]].join('')}}">
+                  <td>
+                    {{armorcell.data[40]}}
+                  </td>
+                  <td class="skillamount">
+                    {{armorcell.data[41]}}
+                  </td>
+                </tr>
+                <tr class="{{[armorcell.data[42],' skill',armorcell.data[43]].join('')}}">
+                  <td>
+                    {{armorcell.data[42]}}
+                  </td>
+                  <td class="skillamount">
+                    {{armorcell.data[43]}}
+                  </td>
+                </tr>
+                <tr class="{{[armorcell.data[44],' skill',armorcell.data[45]].join('')}}">
+                  <td>
+                    {{armorcell.data[44]}}
+                  </td>
+                  <td class="skillamount">
+                    {{armorcell.data[45]}}
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <hr/>
+                    [Forging Material]
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[21]}}">
+                  <td colspan="2">
+                    {{armorcell.data[21]}}x{{armorcell.data[22]}}
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[24]}}">
+                  <td colspan="2">
+                    {{armorcell.data[24]}}x{{armorcell.data[25]}}
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[27]}}">
+                  <td colspan="2">
+                    {{armorcell.data[27]}}x{{armorcell.data[28]}}
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[30]}}">
+                  <td colspan="2">
+                    {{armorcell.data[30]}}x{{armorcell.data[31]}}
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[33]}}">
+                  <td colspan="2">
+                    {{armorcell.data[33]}}x{{armorcell.data[34]}}
+                  </td>
+                </tr>
+                <tr class="white no{{armorcell.data[36]}}">
+                  <td colspan="2">
+                    {{armorcell.data[36]}}x{{armorcell.data[37]}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </td>
+      <td class="armorskill">
+        {{armor.data[56]}}
+      </td>
+    </tr>
+  </tbody>
+</table>

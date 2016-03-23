@@ -1,0 +1,13 @@
+<ul id="slide-out" class="side-nav fixed mho-sidebar grey darken-4">
+  <li class="logo">
+    <img src="assets/images/felyne.png" class="felyne-icon">
+    <img src="assets/images/tigrex.png" class="tigrex-icon">
+    <h4 class="mho-sidebar-text yellow-text text-lighten-2 mho-font medium-font">Monster Hunter Online</h4>
+  </li>
+  <li class="navi-items" *ngFor="#link of links; #i = index">
+    <a class="grey-text text-lighten-2 mho-font small-font mho-uppercase" href="#/{{link.link}}">
+      <i class="yellow-text lighten-2 material-icons" role="presentation">navigate_next</i> {{link.name}}
+    </a>
+  </li>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

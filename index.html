@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Monster Hunter Online</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="assets/fonts/mho1/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <style>
+      body {
+        height: 100%;
+        background: url(./assets/images/bg1.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .mho-font {
+        font-family: 'monster_hunterregular';
+      }
+      .mho-font.small-font {
+        font-size: 20px;
+      }
+      .mho-font.medium-font {
+        font-size: 25px;
+      }
+      .mho-font.large-font {
+        font-size: 30px;
+      }
+      .mho-uppercase {
+        text-transform: uppercase;
+      }
+
+      .fit-width {
+        max-width: 100%;
+      }
+
+      .fit-height {
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main-app></main-app>
+    <script src="dist/polyfills.bundle.js"></script>
+    <script src="dist/vendor.bundle.js"></script>
+    <script async src="dist/app.bundle.js"></script>
+  </body>
+</html>

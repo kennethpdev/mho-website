@@ -1,0 +1,35 @@
+.cat-menu-like ul {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.cat-menu-like img {
+    vertical-align: top;
+}
+
+.cat-menu-like ul li {
+    padding: 17px;
+    font-size: 18px;
+}
+
+.cat-menu-normal ul li {
+    font-size: 18px;
+}
+
+.cat-menu-like .no-padding li {
+    padding: 0;
+    margin: 0;
+}
+
+.cat-submenu {
+    margin-left: 20px;
+}
+
+.cat-submenu .header {
+    margin: 0;
+}
+
+.cat-submenu ul {
+    padding: 10px 20px;
+}

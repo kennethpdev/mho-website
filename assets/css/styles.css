@@ -1,0 +1,74 @@
+.mho-drawer {
+  width: 350px;
+
+  background: url(../images/wood_1.png) center center fixed;
+}
+
+.mho-drawer-header .felyne-icon {
+  width: 68px;
+  left: 25px;
+  top: 30px;
+  position: relative;
+}
+
+.mho-drawer-header .tigrex-icon {
+  width: 248px;
+  position: absolute;
+  top: 11px;
+  left: 80px;
+}
+
+.mho-drawer-text {
+  padding: 40px 40px 0 40px;
+  margin-bottom: 0;
+}
+
+.mdl-layout--fixed-drawer>.mdl-layout__content {
+  margin-left: 350px;
+
+  background: url(../images/bg1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mdl-layout__drawer {
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
+}
+
+.mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen)>.mdl-layout__header {
+  margin-left: 350px;
+  width: calc(100% - 350px);
+}
+
+.mdl-navigation__link {
+  padding: 8px 40px !important;
+}
+
+.mdl-navigation__link:hover {
+  background-color: #2F2F2F !important;
+}
+
+.mho-font {
+  font-family: 'monster_hunterregular';
+}
+.mho-font.small-font {
+  font-size: 20px;
+}
+.mho-font.medium-font {
+  font-size: 25px;
+}
+.mho-font.large-font {
+  font-size: 30px;
+}
+.mho-uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout--fixed-drawer>.mdl-layout__content {
+        margin-left:0 !important
+    }
+}

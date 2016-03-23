@@ -1,0 +1,51 @@
+.mho-sidebar .felyne-icon {
+  width: 68px;
+  left: 25px;
+  top: 30px;
+  position: relative;
+}
+
+.mho-sidebar .tigrex-icon {
+  width: 248px;
+  position: absolute;
+  top: 11px;
+  left: 80px;
+}
+
+.mho-sidebar-text {
+  padding: 30px 40px 15px 40px;
+  margin-bottom: 0;
+}
+
+.side-nav {
+    background: url(../assets/images/wood_1.png);
+}
+
+.side-nav.fixed li.logo {
+    padding: 0;
+}
+.side-nav.fixed li.logo:hover {
+    background: transparent;
+}
+
+.side-nav li.navi-items {
+    margin-left: 10px;
+}
+.side-nav li.navi-items,
+.side-nav li.navi-items a,
+.side-nav li.navi-items a i.material-icons {
+    line-height: 42px;
+    height: 42px;
+    vertical-align: top;
+}
+
+.side-nav li.navi-items a i.material-icons {
+  display: inline-block;
+  font-size: 20px;
+}
+
+
+.side-nav li:hover,
+.side-nav li.active {
+  background-color: #383838;
+}
